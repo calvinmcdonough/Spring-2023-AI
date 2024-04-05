@@ -1,0 +1,10 @@
+1)I probably spent 8 hours working on this assignment
+
+2) I think the hardest part was familiarizing myself with the code and what methods i had available to me to work with was the hardest part
+
+3) I talked about some of the theory with max and and then the 1 bug with you
+
+4) I feel like i have a really good understanding of the material 90%
+
+5) the actuall minesweeper game i think that the first move can never be a mine so this makes the game a lot easier to win because you start with a lot more information. 
+it would have also been nive to have a testing class where you could play a lot of games withoout having to use the UI

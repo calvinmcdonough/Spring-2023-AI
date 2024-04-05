@@ -1,0 +1,177 @@
+\documentclass[12pt]{amsart}
+\title{CSC 405\\Spring 2023: HW3\\ Due: Friday, FEB 17th at 10:00p}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{mathptmx}
+\usepackage{eucal}
+\usepackage{color}
+\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{xypic}
+\usepackage{mdframed}
+\usepackage{geometry}
+\usepackage{amsmath}
+\xyoption{all}
+\pagestyle{empty}
+\setlength\parskip{\medskipamount}
+\setlength\parindent{24pt}
+\pagestyle{empty}
+\setlength\parskip{\medskipamount}
+\setlength\parindent{0pt}
+\setlength{\topmargin}{-0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\footskip}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{6.5in}
+\setlength{\parindent}{0in}
+%----------------------------------------------------------------
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{exerc}[thm]{Exercise}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+% MATH -----------------------------------------------------------
+\newcommand{\N}{\mathbb N}
+\newcommand{\noi}{\noindent}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\I}{\mathbb I}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\F}{\mathbb F}
+\newcommand{\complex}{\mathbb C}
+\renewcommand{\theequation}{\alph{equation}}
+\newcommand{\tb}{\textbf}
+\newcommand{\nin}{\notin}
+\newcommand{\ep}{\epsilon}
+\newcommand{\back}{$\textbackslash$}
+%----------------------------------------------------------------
+%the solution box----------------------------------------------------------------
+\newcommand\sol[1]{\begin{mdframed}
+\emph{Solution.} #1
+\end{mdframed}}
+\newcommand\solproof[1]{\begin{mdframed}
+\begin{proof} #1
+\end{proof}
+\end{mdframed}}
+%-------------------------------------
+\pagenumbering{gobble}
+\begin{document}
+\thispagestyle{empty}
+%--------------------------------------------------------
+
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip .5cm
+{\centerline{\bf Problems, or parts of problems, concluded with $(\star\star\star)$ are possible presentation problems.}}
+\vskip 1cm
+
+\begin{enumerate}
+%%%%%%%%%%%%%   Ex. 1
+
+
+\vskip 1cm
+
+\item The weatherperson has predicted rain tomorrow, but we don’t trust her. Plus we have heard of this new thing called probability and we want to test it out. In recent years, it has rained only 73 days each year (assume there are no leap years in our world such that a year is 365 days). When it actually rains, the weatherperson correctly forecasts rain 70\% of the time. When it doesn’t rain, she incorrectly forecasts rain 30\% of the time. What is the probability that it will rain tomorrow?
+
+\sol{ P of Rain: $ \frac{73}{365}= 0.2$ P of correct weather prediction when rain 70\% P of incorect weather prediction when it doesnt rain 30\% \[  weatherperson predicted rain meaning there is a .7 chance it is correct. \] \[  P(F|R) = \frac{P(F|R) P(R)}{P(F)}= \frac{.7*.8}{.7*.8+.3*.8}= .37\]
+
+}
+\vskip .5cm
+
+\item 
+
+\begin{enumerate}
+
+\item Write the system as a matrix equation of the form Ax = b.
+\sol{ \[
+   M=
+  \left[ {\begin{array}{cccc}
+   2 & 1 & 1&3 \\
+   4 & 0  & 2& 10\\
+   2 & 2 & 0 & -2\\
+  \end{array} } \right]
+\]
+
+}
+\item find the inverse 
+\sol{ \[
+M^{-1}=
+  \left[ {\begin{array}{ccc}
+   -1& \frac{1}{2} & \frac{1}{2} \\
+   1 & -\frac{1}{2}  & 0\\
+   2 & -\frac{1}{2} & 1 \\
+  \end{array} } \right]
+\]
+
+multiply by b 
+
+ \[
+b=
+  \left[ {\begin{array}{c}
+   3 \\
+   10 \\
+   -2 \\
+  \end{array} } \right]
+\]
+
+and then you get
+
+
+ \[
+x=
+  \left[ {\begin{array}{c}
+   1 \\
+   -2 \\
+   3 \\
+  \end{array} } \right]
+\]
+
+}
+
+
+\end{enumerate}
+
+\item Define matrix $B = bb^T$ where b $\in$  Rd×1 is a column vector that is not all-zero.
+Show that for any vector .
+
+\begin{enumerate}
+
+\item
+
+\sol{
+
+\[
+ B = bb^T = 
+  \left[ {\begin{array}{c}
+   b_1 \\
+   b_2 \\
+   \vdots \\
+   b_n \\
+  \end{array} } \right]  *  [b_1 b_2 ... b_n]
+  \]
+
+then this will simplify and bx will be greater than or equall to 0
+
+
+
+}
+
+
+
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+
+\end{document}
